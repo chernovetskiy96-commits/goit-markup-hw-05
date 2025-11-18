@@ -493,19 +493,56 @@
 
             <div class="form-field-wrapper">
               <label class="lable-field" for="form-username">Name</label>
-              <input id="form-username" type="text" name="username" required />
+              <div class="input-wrapper">
+                <input
+                  class="text-field"
+                  id="form-username"
+                  type="text"
+                  name="username"
+                  required
+                />
+                <svg class="icon-text-field" width="12" height="12">
+                  <use href="./images/icons.svg#icon-name-form"></use>
+                </svg>
+              </div>
             </div>
             <div class="form-field-wrapper">
               <label class="lable-field" for="form-userphon">Phone</label>
-              <input id="form-userphon" type="tel" name="userphone" required />
+              <div class="input-wrapper">
+                <input
+                  class="text-field"
+                  id="form-userphon"
+                  type="tel"
+                  name="userphone"
+                  required
+                />
+                <svg class="icon-text-field" width="12" height="24">
+                  <use href="./images/icons.svg#icon-phon-form"></use>
+                </svg>
+              </div>
             </div>
             <div class="form-field-wrapper">
               <label class="lable-field" for="form-usermail">Email</label>
-              <input id="form-usermail" type="email" name="useremail" />
+              <div class="input-wrapper">
+                <input
+                  class="text-field"
+                  id="form-usermail"
+                  type="email"
+                  name="useremail"
+                />
+                <svg class="icon-text-field" width="12" height="24">
+                  <use href="./images/icons.svg#icon-mail-form"></use>
+                </svg>
+              </div>
             </div>
-            <div>
-              <label class="form-field-wrapper" for="form">Comment</label>
-              <textarea id="form-coment" name="comment"></textarea>
+            <div class="form-field-wrapper">
+              <label class="lable-field" for="form">Comment</label>
+              <textarea
+                class="comment-textarea"
+                id="form-coment"
+                name="comment"
+                placeholder="Text input"
+              ></textarea>
               <div class="policy">
                 <input type="checkbox" id="policy" name="policy" value="on" />
                 <label for="policy"
@@ -513,7 +550,7 @@
                   <a href="#" class="accent">Privacy Policy</a></label
                 >
               </div>
-              <button type="submit">Send</button>
+              <button class="main-button" type="submit">Send</button>
             </div>
           </div>
         </form>
