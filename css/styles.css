@@ -595,6 +595,8 @@ a {
 }
 
 .modal-form {
+    position: relative;
+    padding: 72px 24px 24px;
 }
 
 .modal-title {
@@ -604,24 +606,40 @@ a {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    padding: 72px 16px 0;
+    margin-bottom: 18px;
 }
 
-.user-block {
+.icon-close-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    fill: #2e2f42;
+    border-radius: 50%;
+    background-color: #E7E9FC;
+    border: 4px;
     display: flex;
-    flex-direction: column;
-
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: fill 250ms ease;
+    transition: background-color 250ms ease;
 }
 
-.form-input {
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
+.icon-close-button:hover,
+.icon-close-button:focus {
+    background-color: #404BBF;
+    fill: #FFFFFF;
 }
 
-.username, .userphone, .useremail, .usercomment {
-    padding-top: 8px;
+.lable-field {
+    display: block;
 }
 
+.form-field-wrapper {
+    margin-bottom: 8px;
+}
 
 
 textarea {
