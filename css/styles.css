@@ -703,3 +703,42 @@ a {
     border-color: #4d5ae5;
 }
 
+.lable-checkbox {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+}
+
+.lable-checkbox .accent-policy {
+    line-height: 1.33;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #4d5ae5;
+}
+
+.custom-checkbox {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    fill: transparent;
+    transition: fill 250ms ease background-color, 250ms ease;
+}
+
+.policy-checkbox:checked 
++ .lable-checkbox 
+.custom-checkbox{
+    background-color: #404bbf;
+    fill: #f4f4fd;
+}
+
+.modal .main-button {
+        margin: 24px 95px;
+}

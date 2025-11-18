@@ -544,11 +544,22 @@
                 placeholder="Text input"
               ></textarea>
               <div class="policy">
-                <input type="checkbox" id="policy" name="policy" value="on" />
-                <label for="policy"
-                  >I accept the terms and conditions of the
-                  <a href="#" class="accent">Privacy Policy</a></label
-                >
+                <input
+                  class="policy-checkbox visually-hidden"
+                  type="checkbox"
+                  id="policy"
+                  name="policy"
+                  value="on"
+                />
+                <label class="lable-checkbox" for="policy">
+                  <span class="custom-checkbox">
+                    <svg width="10" height="8">
+                      <use href="./images/icons.svg#checkbox-icon"></use>
+                    </svg>
+                  </span>
+                  I accept the terms and conditions of the
+                  <a href="#" class="accent-policy">Privacy Policy</a>
+                </label>
               </div>
               <button class="main-button" type="submit">Send</button>
             </div>
