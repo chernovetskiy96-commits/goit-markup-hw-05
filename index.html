@@ -477,114 +477,108 @@
           </ul>
         </div>
         <div class="subscribe-wrapper">
-          <label class="subscrabe-lable" for="usersubcribe">Subscribe</label>
-          <div class="subscribe-part">
-            <input
-              class="subscribe-input"
-              type="email"
-              id="usersubcribe"
-              name="usersubscribe"
-              placeholder="E-mail"
-            />
-
-            <button class="subscribe-button" type="button">
-              <span class="button-page">
-                Subscribe
-                <svg class="subscribe-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-subscribe"></use>
-                </svg>
-              </span>
+          <p>Subscribe</p>
+          <form class="subscribe-part">
+            <label class="subscrabe-lable">
+              <input
+                class="subscribe-input"
+                type="email"
+                id="usersubcribe"
+                name="usersubscribe"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscribe-button" type="submit">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
 
     <div class="modal-overlay is-open">
       <div class="modal">
+        <button class="icon-close-button" type="button">
+          <svg class="icon-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form" name="feedback-form">
-          <h3 class="modal-title">
-            Leave your contacts and we will call you back
-          </h3>
-          <div class="user-block">
-            <button class="icon-close-button" type="button">
-              <svg class="icon-close" width="8" height="8">
-                <use href="./images/icons.svg#icon-close"></use>
+          <div class="form-field-wrapper">
+            <label class="lable-field" for="user-name">Name</label>
+            <div class="input-wrapper">
+              <input
+                class="text-field"
+                id="user-name"
+                type="text"
+                name="username"
+                required
+              />
+              <svg class="icon-text-field" width="18" height="24">
+                <use href="./images/icons.svg#icon-name-form"></use>
               </svg>
-            </button>
-
-            <div class="form-field-wrapper">
-              <label class="lable-field" for="form-username">Name</label>
-              <div class="input-wrapper">
-                <input
-                  class="text-field"
-                  id="form-username"
-                  type="text"
-                  name="username"
-                  required
-                />
-                <svg class="icon-text-field" width="12" height="12">
-                  <use href="./images/icons.svg#icon-name-form"></use>
-                </svg>
-              </div>
             </div>
-            <div class="form-field-wrapper">
-              <label class="lable-field" for="form-userphon">Phone</label>
-              <div class="input-wrapper">
-                <input
-                  class="text-field"
-                  id="form-userphon"
-                  type="tel"
-                  name="userphone"
-                  required
-                />
-                <svg class="icon-text-field" width="12" height="24">
-                  <use href="./images/icons.svg#icon-phon-form"></use>
-                </svg>
-              </div>
+          </div>
+          <div class="form-field-wrapper">
+            <label class="lable-field" for="form-userphon">Phone</label>
+            <div class="input-wrapper">
+              <input
+                class="text-field"
+                id="form-userphon"
+                type="tel"
+                name="userphone"
+                required
+              />
+              <svg class="icon-text-field" width="18" height="24">
+                <use href="./images/icons.svg#icon-phon-form"></use>
+              </svg>
             </div>
-            <div class="form-field-wrapper">
-              <label class="lable-field" for="form-usermail">Email</label>
-              <div class="input-wrapper">
-                <input
-                  class="text-field"
-                  id="form-usermail"
-                  type="email"
-                  name="useremail"
-                />
-                <svg class="icon-text-field" width="12" height="24">
-                  <use href="./images/icons.svg#icon-mail-form"></use>
-                </svg>
-              </div>
+          </div>
+          <div class="form-field-wrapper">
+            <label class="lable-field" for="form-usermail">Email</label>
+            <div class="input-wrapper">
+              <input
+                class="text-field"
+                id="form-usermail"
+                type="email"
+                name="useremail"
+              />
+              <svg class="icon-text-field" width="18" height="24">
+                <use href="./images/icons.svg#icon-mail-form"></use>
+              </svg>
             </div>
-            <div class="form-field-wrapper">
-              <label class="lable-field" for="form">Comment</label>
-              <textarea
-                class="comment-textarea"
-                id="form-coment"
-                name="comment"
-                placeholder="Text input"
-              ></textarea>
-              <div class="policy">
-                <input
-                  class="policy-checkbox visually-hidden"
-                  type="checkbox"
-                  id="policy"
-                  name="policy"
-                  value="on"
-                />
-                <label class="lable-checkbox" for="policy">
-                  <span class="custom-checkbox">
-                    <svg width="10" height="8">
-                      <use href="./images/icons.svg#checkbox-icon"></use>
-                    </svg>
-                  </span>
-                  I accept the terms and conditions of the
-                  <a href="#" class="accent-policy">Privacy Policy</a>
-                </label>
-              </div>
-              <button class="main-button" type="submit">Send</button>
+          </div>
+          <div class="form-field-comment">
+            <label class="lable-field" for="user-comment">Comment</label>
+            <textarea
+              class="comment-textarea"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
+            <div class="policy">
+              <input
+                class="policy-checkbox visually-hidden"
+                type="checkbox"
+                id="user-privacy"
+                name="user-privacy"
+                value="true"
+              />
+              <label class="lable-checkbox" for="user-privacy">
+                <span class="custom-checkbox">
+                  <svg width="10" height="8">
+                    <use href="./images/icons.svg#checkbox-icon"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the
+                <a href="#" class="accent-policy">Privacy Policy</a>
+              </label>
             </div>
+            <button class="modal-button" type="submit">Send</button>
           </div>
         </form>
       </div>
